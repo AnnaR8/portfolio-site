@@ -3,28 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Портфолио | Веб-дизайнер</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="header">
+            <!-- Шапка с навигацией -->
+            <header class="header">
+                <div class="logo">
+                    <span>PORTFOLIO</span>
+                </div>
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="/">Главная</a></li>
-                        <li><a href="/about-me">Обо мне</a></li>
-                        <li><a href="/rezume">Резюме</a></li>
-                        <li><a href="/portfolio">Портфолио</a></li>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#about" class="nav-link">Обо мне</a></li>
+                        <li><a href="#skills" class="nav-link">Навыки</a></li>
+                        <li><a href="#work" class="nav-link">Портфолио</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </nav>
-            </div>
-            <div class="block-one">
+            </header>
 
-            </div>
-            <div class="footer">
+            <!-- Главный герой-секция -->
+            <section class="hero" id="home">
+                <h1 class="hero-title">Я создаю <span>магию</span> <br>в цифровом мире</h1>
+                <p class="hero-subtitle">Веб-дизайн / 3D-моделирование / Креатив</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">МОИ РАБОТЫ</a>
+                    <a href="#contact" class="btn btn-secondary">СВЯЗАТЬСЯ</a>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </section>
 
-            </div>
+            <!-- Секция "Обо мне" -->
+            <section class="about-section" id="about">
+                <div class="section-header">
+                    <h2 class="section-title">Обо мне</h2>
+                    <p class="section-subtitle">Познакомимся поближе</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>Привет! Меня зовут Алексей</h3>
+                        <p>Я цифровой художник и дизайнер с более чем 5-летним опытом создания уникальных визуальных решений. Моя страсть — превращать сложные идеи в элегантные и функциональные дизайны.</p>
+                        <p>Специализируюсь на веб-дизайне, 3D-моделировании и создании интерактивных интерфейсов. Верю, что дизайн должен быть не только функциональным, но и вызывать искреннюю улыбку.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h4>50+</h4>
+                                <p>Завершенных проектов</p>
+                            </div>
+                            <div class="stat">
+                                <h4>5 лет</h4>
+                                <p>Опыта работы</p>
+                            </div>
+                            <div class="stat">
+                                <h4>30+</h4>
+                                <p>Довольных клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция "Навыки" -->
+            <section class="skills-section" id="skills">
+                <div class="section-header">
+                    <h2 class="section-title">Мои навыки</h2>
+                    <p class="section-subtitle">Что я умею делать</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Веб-дизайн</h3>
+                        <p>Создание современных, адаптивных и удобных интерфейсов с использованием Figma, Adobe XD и Photoshop.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>3D-моделирование</h3>
+                        <p>Разработка 3D-моделей и визуализаций в Blender и Maya для игр, рекламы и презентаций.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Фронтенд-разработка</h3>
+                        <p>Верстка и программирование с использованием HTML5, CSS3, JavaScript и React.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция "Портфолио" -->
+            <section class="projects-section" id="work">
+                <div class="section-header">
+                    <h2 class="section-title">Мои работы</h2>
+                    <p class="section-subtitle">Последние проекты</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img" style="background: linear-gradient(135deg, #FFD700, #FFA500);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">ПОСМОТРЕТЬ</a>
+                            </div>
+                            <span class="project-label">ВЕБ-ДИЗАЙН</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Корпоративный сайт для TechStart</h3>
+                            <p>Разработка современного корпоративного сайта с адаптивным дизайном и интерактивными элементами.</p>
+                            <div class="project-tags">
+                                <span>Figma</span>
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img" style="background: linear-gradient(135deg, #00FFCC, #0099CC);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">ПОСМОТРЕТЬ</a>
+                            </div>
+                            <span class="project-label">3D-МОДЕЛИРОВАНИЕ</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Архитектурная визуализация</h3>
+                            <p>Создание 3D-модели современного жилого комплекса с детализацией интерьеров и экстерьеров.</p>
+                            <div class="project-tags">
+                                <span>Blender</span>
+                                <span>3D Max</span>
+                                <span>Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img" style="background: linear-gradient(135deg, #FF99FF, #CC00CC);">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">ПОСМОТРЕТЬ</a>
+                            </div>
+                            <span class="project-label">БРЕНДИНГ</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Айдентика для кофейни</h3>
+                            <p>Разработка полного фирменного стиля: логотип, упаковка, меню и элементы интерьера.</p>
+                            <div class="project-tags">
+                                <span>Illustrator</span>
+                                <span>InDesign</span>
+                                <span>Брендинг</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="btn btn-outline">СМОТРЕТЬ ВСЕ ПРОЕКТЫ</a>
+                </div>
+            </section>
+
+            <!-- Секция "Контакты" -->
+            <section class="contact-section" id="contact">
+                <div class="section-header">
+                    <h2 class="section-title">Свяжитесь со мной</h2>
+                    <p class="section-subtitle">Давайте сделаем что-то крутое вместе!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@portfolio.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (999) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Локация</h4>
+                                <p>Москва, Россия</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Футер -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <span>PORTFOLIO</span>
+                    </div>
+                    <p class="footer-text">© 2026 Сделано с любовью и креативом</p>
+                    <p class="footer-subtext">Все права защищены</p>
+                </div>
+            </footer>
         </div>
     </div>
+
 </body>
 </html>
