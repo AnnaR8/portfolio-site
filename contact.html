@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- Шапка с навигацией -->
+        <header class="header">
+          <a href="index.html" class="logo">ANNA☻</a>
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li>
+                <a href="index.html#home" class="nav-link active">Главная</a>
+              </li>
+              <li><a href="index.html#about" class="nav-link">Обо мне</a></li>
+              <li><a href="index.html#skills" class="nav-link">Навыки</a></li>
+              <li><a href="projects.html" class="nav-link">Портфолио</a></li>
+              <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+          <!-- Переключатели цветов -->
+          <div class="theme-controls">
+            <button
+              id="darkModeToggle"
+              class="theme-toggle"
+              title="Темная/светлая тема"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+            <div class="color-picker">
+              <button
+                class="color-option"
+                data-color="blue"
+                style="background: #3300ff"
+                title="Голубая тема"
+              ></button>
+              <button
+                class="color-option"
+                data-color="green"
+                style="background: #00cc66"
+                title="Зеленая тема"
+              ></button>
+              <button
+                class="color-option"
+                data-color="pink"
+                style="background: #ff3366"
+                title="Розовая тема"
+              ></button>
+              <button
+                class="color-option"
+                data-color="purple"
+                style="background: #9933ff"
+                title="Фиолетовая тема"
+              ></button>
+            </div>
+          </div>
+        </header>
+        <!-- Секция "Контакты" -->
+        <section class="contact-section" id="contact">
+          <div class="section-header">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <p class="section-subtitle">
+              Давайте сделаем что-то крутое вместе!
+            </p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>repkoanna0@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Телефон</h4>
+                  <p>+7 (707) 610-46-63</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>Локация</h4>
+                  <p>Павлодар, Казахстан</p>
+                </div>
+              </div>
+              <div class="social-links">
+                <a
+                  href="https://t.me/pineepeach"
+                  target="_blank"
+                  title="Telegram"
+                >
+                  <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a
+                  href="https://instagram.com/_pinee._"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://github.com/AnnaR8"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <form
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="324f3405-918a-4f61-a596-18fb46a0ab1e"
+              />
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Ваш email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Ваше сообщение"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                ОТПРАВИТЬ СООБЩЕНИЕ
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <span>PORTFOLIO</span>
+            </div>
+            <p class="footer-text">© 2026 Сделано с любовью и креативом</p>
+            <p class="footer-subtext">Все права защищены</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
